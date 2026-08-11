@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.dSYM
+
+# Swift Package Manager
+.build/
+
+# Local distribution artifacts
+dist/
+*.app
+*.zip
+
+# Signing material and local configuration
+*.p12
+*.provisionprofile
+*.mobileprovision
+.env
+.env.*
+!.env.example
+
+# Python helper scripts
+__pycache__/
+*.py[cod]

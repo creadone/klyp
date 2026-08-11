@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81338F6E15559014983F5A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375412D94FC9993B6A04449 /* AppDelegate.swift */; };
+		51C43BE61A804AD20187D1FF /* KlypApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A06C10C1A9B07972441E65B /* KlypApp.swift */; };
+		F9901B39C36855DC43178AB8 /* KeychainItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55280194A9DC12738EF5B8 /* KeychainItemList.swift */; };
+		0F8EEA833EBF1A246B5E7B7E /* PasswordItemSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF378297C5FD9B1B50465B /* PasswordItemSummary.swift */; };
+		4B0AA6A1FE0090D6537B248C /* ClipboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD02DDB1EF543846AB8ADB3 /* ClipboardService.swift */; };
+		34B199AC528D55578E4ABA91 /* KeychainQueryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82255DED4AB6EDC84426E53B /* KeychainQueryFactory.swift */; };
+		BCE8CB37F69E9347AB5F65B7 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1BD6C0341299387A936372 /* KeychainStore.swift */; };
+		DA199D2653057EFB1586B292 /* KeychainStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D8AE16C5E3CDE096395609 /* KeychainStoring.swift */; };
+		1C4EC29C7ABC34C049B0C9E4 /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080D2D775DFE82BEF253A4B /* LoginItemService.swift */; };
+		3A48A63A0388A067B6CA8CF1 /* PasteboardClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E59B4942C31597EC997BFC0 /* PasteboardClient.swift */; };
+		D6AC481CE9B8A55A58ECBE00 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C25C611035EA3E7FC28934 /* AppError.swift */; };
+		FCF522B161F8B38819746624 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043752B1B1C76C6BE0113AC4 /* Constants.swift */; };
+		B57C5E1F5B77BF24DA02FD4C /* DiagnosticLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5C793195589861C5BB2DB6 /* DiagnosticLogger.swift */; };
+		4223EE36C4C118D0D9866783 /* PasswordItemSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE701349A2F7A33B6EE71456 /* PasswordItemSorter.swift */; };
+		2BEE5ED9DE6763CD20756D95 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D84C0405CFC256B79BEF3 /* PasswordValidator.swift */; };
+		D1C9AC0F495CADC93DEE19F7 /* PasswordListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C75B9F08C8218F83FD2BD7 /* PasswordListViewModel.swift */; };
+		573D0C99AB874E8184DEE98A /* AppMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A899303BF33066F80354C91 /* AppMenuView.swift */; };
+		B6D7359E22A86EB8B8D67EF9 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83979F048C8CEB69C285ED33 /* EmptyStateView.swift */; };
+		F17272B78FAA62B19D4EAED7 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983FCA34F26421AF72254C14 /* ErrorStateView.swift */; };
+		D1EFDF41E8D239602E5C664C /* MenuBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D881B67132490D630979372 /* MenuBarContentView.swift */; };
+		602719FC2CEEB2C89D12DB9F /* PasswordEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A795333E2B64ACF2E70322C /* PasswordEditorView.swift */; };
+		1D5E34E29E47E1A0FE791F2D /* PasswordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2903054ACA531CCFD25F1660 /* PasswordListView.swift */; };
+		EA656842795779BDCD169DC8 /* PasswordRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88078A17A05A777228F282ED /* PasswordRowView.swift */; };
+		D4A0C366D106EE6717F5AC6B /* ClipboardServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D586DB976C4969431BA6D9 /* ClipboardServiceTests.swift */; };
+		A1C0F34CC66F5F318F9F84C0 /* DiagnosticLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF464715ABF0CE686DF865E5 /* DiagnosticLoggerTests.swift */; };
+		B68759FE1705B4A382E4A2D8 /* KeychainQueryFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27774B01443250107A48CE1D /* KeychainQueryFactoryTests.swift */; };
+		4629E267E1FC5F118C27F573 /* KeychainStoreIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEDE77D8C34266C44BB6E5C /* KeychainStoreIntegrationTests.swift */; };
+		6D1395BF5FD321370D7FBF2A /* PasswordItemSorterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51D47ACF573962DB21025D9 /* PasswordItemSorterTests.swift */; };
+		7D3EC745797CAD60F95F5286 /* PasswordItemSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6B41F1C266F3CDE629D020 /* PasswordItemSummaryTests.swift */; };
+		F21DC7A466F0E60C9C95A5BC /* PasswordListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486CB3E7FF84B691B45338A /* PasswordListViewModelTests.swift */; };
+		C22F00BDAC88CD6A9BABE4DB /* PasswordValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159DCCA7368631B7CBAAFF2C /* PasswordValidationTests.swift */; };
+		1C1F52BD52B91C9355CA6EB0 /* TestDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA939FAEC8E6F7151AA211E2 /* TestDoubles.swift */; };
+		ED8D7EF004AB9D4079395446 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCE4AC6F91EF4CABB1B10FC /* Security.framework */; };
+		BA604F6A5F0292F7DCCB1FA5 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21DE7DF99A7D121405B3F8E4 /* ServiceManagement.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1981E74AB3786725C5F3BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76336687360224AF5E176790 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E711C4654A43949E841855;
+			remoteInfo = Klyp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1375412D94FC9993B6A04449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate.swift"; sourceTree = "<group>"; };
+		1A06C10C1A9B07972441E65B /* KlypApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KlypApp.swift"; sourceTree = "<group>"; };
+		BC55280194A9DC12738EF5B8 /* KeychainItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainItemList.swift"; sourceTree = "<group>"; };
+		04FF378297C5FD9B1B50465B /* PasswordItemSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordItemSummary.swift"; sourceTree = "<group>"; };
+		CDD02DDB1EF543846AB8ADB3 /* ClipboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClipboardService.swift"; sourceTree = "<group>"; };
+		82255DED4AB6EDC84426E53B /* KeychainQueryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainQueryFactory.swift"; sourceTree = "<group>"; };
+		6F1BD6C0341299387A936372 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainStore.swift"; sourceTree = "<group>"; };
+		C7D8AE16C5E3CDE096395609 /* KeychainStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainStoring.swift"; sourceTree = "<group>"; };
+		8080D2D775DFE82BEF253A4B /* LoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginItemService.swift"; sourceTree = "<group>"; };
+		8E59B4942C31597EC997BFC0 /* PasteboardClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasteboardClient.swift"; sourceTree = "<group>"; };
+		F1C25C611035EA3E7FC28934 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppError.swift"; sourceTree = "<group>"; };
+		043752B1B1C76C6BE0113AC4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants.swift"; sourceTree = "<group>"; };
+		1B5C793195589861C5BB2DB6 /* DiagnosticLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiagnosticLogger.swift"; sourceTree = "<group>"; };
+		CE701349A2F7A33B6EE71456 /* PasswordItemSorter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordItemSorter.swift"; sourceTree = "<group>"; };
+		C27D84C0405CFC256B79BEF3 /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordValidator.swift"; sourceTree = "<group>"; };
+		47C75B9F08C8218F83FD2BD7 /* PasswordListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordListViewModel.swift"; sourceTree = "<group>"; };
+		2A899303BF33066F80354C91 /* AppMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppMenuView.swift"; sourceTree = "<group>"; };
+		83979F048C8CEB69C285ED33 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmptyStateView.swift"; sourceTree = "<group>"; };
+		983FCA34F26421AF72254C14 /* ErrorStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorStateView.swift"; sourceTree = "<group>"; };
+		1D881B67132490D630979372 /* MenuBarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuBarContentView.swift"; sourceTree = "<group>"; };
+		2A795333E2B64ACF2E70322C /* PasswordEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordEditorView.swift"; sourceTree = "<group>"; };
+		2903054ACA531CCFD25F1660 /* PasswordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordListView.swift"; sourceTree = "<group>"; };
+		88078A17A05A777228F282ED /* PasswordRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordRowView.swift"; sourceTree = "<group>"; };
+		34D586DB976C4969431BA6D9 /* ClipboardServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClipboardServiceTests.swift"; sourceTree = "<group>"; };
+		FF464715ABF0CE686DF865E5 /* DiagnosticLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiagnosticLoggerTests.swift"; sourceTree = "<group>"; };
+		27774B01443250107A48CE1D /* KeychainQueryFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainQueryFactoryTests.swift"; sourceTree = "<group>"; };
+		2CEDE77D8C34266C44BB6E5C /* KeychainStoreIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeychainStoreIntegrationTests.swift"; sourceTree = "<group>"; };
+		C51D47ACF573962DB21025D9 /* PasswordItemSorterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordItemSorterTests.swift"; sourceTree = "<group>"; };
+		AB6B41F1C266F3CDE629D020 /* PasswordItemSummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordItemSummaryTests.swift"; sourceTree = "<group>"; };
+		0486CB3E7FF84B691B45338A /* PasswordListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordListViewModelTests.swift"; sourceTree = "<group>"; };
+		159DCCA7368631B7CBAAFF2C /* PasswordValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PasswordValidationTests.swift"; sourceTree = "<group>"; };
+		EA939FAEC8E6F7151AA211E2 /* TestDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestDoubles.swift"; sourceTree = "<group>"; };
+		00B20C10B9A39BF3DEB7609F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82DE0BAE19425214E84ED9C0 /* Klyp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Klyp.entitlements; sourceTree = "<group>"; };
+		AA4ACA445B3FBAF47CDE31AC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0FCE4AC6F91EF4CABB1B10FC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		21DE7DF99A7D121405B3F8E4 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		43E6519C7A7902DE76C23D72 /* Klyp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klyp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7BEA4FF5BB09E5CA3445A9A /* KlypTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlypTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F001BC2AF9EB5498B3360756 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED8D7EF004AB9D4079395446 /* Security.framework in Frameworks */,
+				BA604F6A5F0292F7DCCB1FA5 /* ServiceManagement.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B208DB47DA230159E08E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADCF10F76EBF2A74473E9DC4 = {
+			isa = PBXGroup;
+			children = (
+				CF8D0BD4B75E8C2C174692A5 /* Klyp */,
+				EEFE21A1443933CA4DE017DA /* KlypTests */,
+				1B4FFFFBDA5103C7E9E4DCCA /* Documentation */,
+				ED2F3B048716C9DC7573911C /* Frameworks */,
+				00C45FD35CB0F9C5F764F070 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF8D0BD4B75E8C2C174692A5 /* Klyp */ = {
+			isa = PBXGroup;
+			children = (
+				1375412D94FC9993B6A04449 /* AppDelegate.swift */,
+				1A06C10C1A9B07972441E65B /* KlypApp.swift */,
+				ADC804B8A82D55BF92C79B99 /* Models */,
+				79AD8E4D087BFD12393EF23B /* Services */,
+				6FC72D8207A8492E65F97DF7 /* Support */,
+				1FD1EEA693A63B0DD4B5F900 /* ViewModels */,
+				8F18BD4C403C80CA119AAEF3 /* Views */,
+				00B20C10B9A39BF3DEB7609F /* Info.plist */,
+				82DE0BAE19425214E84ED9C0 /* Klyp.entitlements */,
+			);
+			path = Klyp;
+			sourceTree = "<group>";
+		};
+		ADC804B8A82D55BF92C79B99 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC55280194A9DC12738EF5B8 /* KeychainItemList.swift */,
+				04FF378297C5FD9B1B50465B /* PasswordItemSummary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79AD8E4D087BFD12393EF23B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDD02DDB1EF543846AB8ADB3 /* ClipboardService.swift */,
+				82255DED4AB6EDC84426E53B /* KeychainQueryFactory.swift */,
+				6F1BD6C0341299387A936372 /* KeychainStore.swift */,
+				C7D8AE16C5E3CDE096395609 /* KeychainStoring.swift */,
+				8080D2D775DFE82BEF253A4B /* LoginItemService.swift */,
+				8E59B4942C31597EC997BFC0 /* PasteboardClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6FC72D8207A8492E65F97DF7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F1C25C611035EA3E7FC28934 /* AppError.swift */,
+				043752B1B1C76C6BE0113AC4 /* Constants.swift */,
+				1B5C793195589861C5BB2DB6 /* DiagnosticLogger.swift */,
+				CE701349A2F7A33B6EE71456 /* PasswordItemSorter.swift */,
+				C27D84C0405CFC256B79BEF3 /* PasswordValidator.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1FD1EEA693A63B0DD4B5F900 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				47C75B9F08C8218F83FD2BD7 /* PasswordListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8F18BD4C403C80CA119AAEF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A899303BF33066F80354C91 /* AppMenuView.swift */,
+				83979F048C8CEB69C285ED33 /* EmptyStateView.swift */,
+				983FCA34F26421AF72254C14 /* ErrorStateView.swift */,
+				1D881B67132490D630979372 /* MenuBarContentView.swift */,
+				2A795333E2B64ACF2E70322C /* PasswordEditorView.swift */,
+				2903054ACA531CCFD25F1660 /* PasswordListView.swift */,
+				88078A17A05A777228F282ED /* PasswordRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEFE21A1443933CA4DE017DA /* KlypTests */ = {
+			isa = PBXGroup;
+			children = (
+				34D586DB976C4969431BA6D9 /* ClipboardServiceTests.swift */,
+				FF464715ABF0CE686DF865E5 /* DiagnosticLoggerTests.swift */,
+				27774B01443250107A48CE1D /* KeychainQueryFactoryTests.swift */,
+				2CEDE77D8C34266C44BB6E5C /* KeychainStoreIntegrationTests.swift */,
+				C51D47ACF573962DB21025D9 /* PasswordItemSorterTests.swift */,
+				AB6B41F1C266F3CDE629D020 /* PasswordItemSummaryTests.swift */,
+				0486CB3E7FF84B691B45338A /* PasswordListViewModelTests.swift */,
+				159DCCA7368631B7CBAAFF2C /* PasswordValidationTests.swift */,
+				EA939FAEC8E6F7151AA211E2 /* TestDoubles.swift */,
+			);
+			path = KlypTests;
+			sourceTree = "<group>";
+		};
+		1B4FFFFBDA5103C7E9E4DCCA /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				AA4ACA445B3FBAF47CDE31AC /* README.md */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		ED2F3B048716C9DC7573911C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FCE4AC6F91EF4CABB1B10FC /* Security.framework */,
+				21DE7DF99A7D121405B3F8E4 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00C45FD35CB0F9C5F764F070 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43E6519C7A7902DE76C23D72 /* Klyp.app */,
+				F7BEA4FF5BB09E5CA3445A9A /* KlypTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88E711C4654A43949E841855 /* Klyp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32995943DE67267A65D32CA9 /* Build configuration list for PBXNativeTarget "Klyp" */;
+			buildPhases = (
+				8682261519D15BD64A9E5D31 /* Sources */,
+				F001BC2AF9EB5498B3360756 /* Frameworks */,
+				E28FAD8F60ECDED9B4AD087A /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = Klyp;
+			productName = Klyp;
+			productReference = 43E6519C7A7902DE76C23D72 /* Klyp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73423EA4CFABD08A5D7F3B71 /* KlypTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F722E0DC847BA009AE0DBB50 /* Build configuration list for PBXNativeTarget "KlypTests" */;
+			buildPhases = (
+				29BEEA3D856852A8CC3247ED /* Sources */,
+				D6B208DB47DA230159E08E40 /* Frameworks */,
+				96B4702EF39C73C4DCF44E6C /* Resources */,
+			);
+			buildRules = ();
+			dependencies = (
+				7DC7CB2D79176225B3DBDEDF /* PBXTargetDependency */,
+			);
+			name = KlypTests;
+			productName = KlypTests;
+			productReference = F7BEA4FF5BB09E5CA3445A9A /* KlypTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76336687360224AF5E176790 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					88E711C4654A43949E841855 = {
+						CreatedOnToolsVersion = 16.0;
+						SystemCapabilities = {
+							com.apple.Keychain = { enabled = 1; };
+						};
+					};
+					73423EA4CFABD08A5D7F3B71 = { CreatedOnToolsVersion = 16.0; TestTargetID = 88E711C4654A43949E841855; };
+				};
+			};
+			buildConfigurationList = 12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "Klyp" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = ru;
+			hasScannedForEncodings = 0;
+			knownRegions = (ru, en, Base);
+			mainGroup = ADCF10F76EBF2A74473E9DC4;
+			productRefGroup = 00C45FD35CB0F9C5F764F070 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E711C4654A43949E841855 /* Klyp */,
+				73423EA4CFABD08A5D7F3B71 /* KlypTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E28FAD8F60ECDED9B4AD087A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B4702EF39C73C4DCF44E6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8682261519D15BD64A9E5D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81338F6E15559014983F5A34 /* AppDelegate.swift in Sources */,
+				51C43BE61A804AD20187D1FF /* KlypApp.swift in Sources */,
+				F9901B39C36855DC43178AB8 /* KeychainItemList.swift in Sources */,
+				0F8EEA833EBF1A246B5E7B7E /* PasswordItemSummary.swift in Sources */,
+				4B0AA6A1FE0090D6537B248C /* ClipboardService.swift in Sources */,
+				34B199AC528D55578E4ABA91 /* KeychainQueryFactory.swift in Sources */,
+				BCE8CB37F69E9347AB5F65B7 /* KeychainStore.swift in Sources */,
+				DA199D2653057EFB1586B292 /* KeychainStoring.swift in Sources */,
+				1C4EC29C7ABC34C049B0C9E4 /* LoginItemService.swift in Sources */,
+				3A48A63A0388A067B6CA8CF1 /* PasteboardClient.swift in Sources */,
+				D6AC481CE9B8A55A58ECBE00 /* AppError.swift in Sources */,
+				FCF522B161F8B38819746624 /* Constants.swift in Sources */,
+				B57C5E1F5B77BF24DA02FD4C /* DiagnosticLogger.swift in Sources */,
+				4223EE36C4C118D0D9866783 /* PasswordItemSorter.swift in Sources */,
+				2BEE5ED9DE6763CD20756D95 /* PasswordValidator.swift in Sources */,
+				D1C9AC0F495CADC93DEE19F7 /* PasswordListViewModel.swift in Sources */,
+				573D0C99AB874E8184DEE98A /* AppMenuView.swift in Sources */,
+				B6D7359E22A86EB8B8D67EF9 /* EmptyStateView.swift in Sources */,
+				F17272B78FAA62B19D4EAED7 /* ErrorStateView.swift in Sources */,
+				D1EFDF41E8D239602E5C664C /* MenuBarContentView.swift in Sources */,
+				602719FC2CEEB2C89D12DB9F /* PasswordEditorView.swift in Sources */,
+				1D5E34E29E47E1A0FE791F2D /* PasswordListView.swift in Sources */,
+				EA656842795779BDCD169DC8 /* PasswordRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BEEA3D856852A8CC3247ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A0C366D106EE6717F5AC6B /* ClipboardServiceTests.swift in Sources */,
+				A1C0F34CC66F5F318F9F84C0 /* DiagnosticLoggerTests.swift in Sources */,
+				B68759FE1705B4A382E4A2D8 /* KeychainQueryFactoryTests.swift in Sources */,
+				4629E267E1FC5F118C27F573 /* KeychainStoreIntegrationTests.swift in Sources */,
+				6D1395BF5FD321370D7FBF2A /* PasswordItemSorterTests.swift in Sources */,
+				7D3EC745797CAD60F95F5286 /* PasswordItemSummaryTests.swift in Sources */,
+				F21DC7A466F0E60C9C95A5BC /* PasswordListViewModelTests.swift in Sources */,
+				C22F00BDAC88CD6A9BABE4DB /* PasswordValidationTests.swift in Sources */,
+				1C1F52BD52B91C9355CA6EB0 /* TestDoubles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DC7CB2D79176225B3DBDEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88E711C4654A43949E841855 /* Klyp */;
+			targetProxy = F1981E74AB3786725C5F3BF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		73BFC4993D558C2844970A56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = "YES_AGGRESSIVE";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = "YES_ERROR";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = "YES_ERROR";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = "YES_AGGRESSIVE";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = "gnu17";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = "YES_ERROR";
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = "YES_AGGRESSIVE";
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "13.0";
+				SDKROOT = "macosx";
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = "0";
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C5BC6FE1E438E679FB7F74F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = "YES_AGGRESSIVE";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = "YES_ERROR";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = "YES_ERROR";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = "YES_AGGRESSIVE";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = "gnu17";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = "YES_ERROR";
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = "YES_AGGRESSIVE";
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "13.0";
+				SDKROOT = "macosx";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SWIFT_COMPILATION_MODE = "wholemodule";
+			};
+			name = Release;
+		};
+		CC982C4F58FE5F6D2B2680C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Klyp/Klyp.entitlements";
+				CODE_SIGN_STYLE = "Automatic";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Klyp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = "1.0";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creadone.Klyp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_STRICT_CONCURRENCY = "complete";
+				SWIFT_VERSION = "5.0";
+			};
+			name = Debug;
+		};
+		06B6A15813AE62FDCFE74422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Klyp/Klyp.entitlements";
+				CODE_SIGN_STYLE = "Automatic";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Klyp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = "1.0";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creadone.Klyp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_STRICT_CONCURRENCY = "complete";
+				SWIFT_VERSION = "5.0";
+			};
+			name = Release;
+		};
+		A39F4EA2C585763103886C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = "Automatic";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creadone.KlypTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = "complete";
+				SWIFT_VERSION = "5.0";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klyp.app/Contents/MacOS/Klyp";
+			};
+			name = Debug;
+		};
+		B570061E7D3C2C486722CCA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = "Automatic";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.creadone.KlypTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = "complete";
+				SWIFT_VERSION = "5.0";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klyp.app/Contents/MacOS/Klyp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D04D787E90C9B967248BFD /* Build configuration list for PBXProject "Klyp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73BFC4993D558C2844970A56 /* Debug */,
+				3C5BC6FE1E438E679FB7F74F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32995943DE67267A65D32CA9 /* Build configuration list for PBXNativeTarget "Klyp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC982C4F58FE5F6D2B2680C2 /* Debug */,
+				06B6A15813AE62FDCFE74422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F722E0DC847BA009AE0DBB50 /* Build configuration list for PBXNativeTarget "KlypTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39F4EA2C585763103886C2C /* Debug */,
+				B570061E7D3C2C486722CCA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76336687360224AF5E176790 /* Project object */;
+}
